@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>毛毛的Blog</title>
   
-  
+  <subtitle>毛毛</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wjm2432722.github.io/"/>
@@ -10,7 +10,7 @@
   <id>https://wjm2432722.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>毛毛12138</name>
     
   </author>
   
