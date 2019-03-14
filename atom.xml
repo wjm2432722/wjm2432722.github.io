@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wjm2432722.github.io/"/>
-  <updated>2019-03-14T06:58:38.963Z</updated>
+  <updated>2019-03-14T07:15:39.068Z</updated>
   <id>https://wjm2432722.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>LSA类型</title>
     <link href="https://wjm2432722.github.io/2019/03/14/lsa-lei-xing/"/>
     <id>https://wjm2432722.github.io/2019/03/14/lsa-lei-xing/</id>
     <published>2019-03-14T02:38:16.972Z</published>
-    <updated>2019-03-14T06:58:38.963Z</updated>
+    <updated>2019-03-14T07:15:39.068Z</updated>
     
     <summary type="html">
     
@@ -29,14 +29,19 @@
       
         
         
-          &lt;p&gt;title: LSA类型&lt;br&gt;date: 2019-03-14 14:56:04&lt;br&gt;tags:&lt;/p&gt;
-&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h2&gt;&lt;span id=&quot;lsa类型&quot;&gt;LSA类型&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;LSA类型定义了不同的路由器类型，因此需要多种LSA,
+          &lt;h1&gt;&lt;span id=&quot;lsa类型&quot;&gt;LSA类型&lt;/span&gt;&lt;/h1&gt;&lt;p&gt;LSA类型定义了不同的路由器类型，因此需要多种LSA, 通常考试考Type1 , Type2, Type3,Type4,Type5, Type7。&lt;/p&gt;
+&lt;h2&gt;&lt;span
         
       
     
     </summary>
     
+      <category term="网络" scheme="https://wjm2432722.github.io/categories/%E7%BD%91%E7%BB%9C/"/>
+    
+    
+      <category term="路由交换" scheme="https://wjm2432722.github.io/tags/%E8%B7%AF%E7%94%B1%E4%BA%A4%E6%8D%A2/"/>
+    
+      <category term="ospf" scheme="https://wjm2432722.github.io/tags/ospf/"/>
     
   </entry>
   
