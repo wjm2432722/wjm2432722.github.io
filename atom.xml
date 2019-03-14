@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wjm2432722.github.io/"/>
-  <updated>2019-03-13T07:49:50.976Z</updated>
+  <updated>2019-03-14T04:54:58.017Z</updated>
   <id>https://wjm2432722.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://wjm2432722.github.io/2019/03/14/lsa-lei-xing/"/>
+    <id>https://wjm2432722.github.io/2019/03/14/lsa-lei-xing/</id>
+    <published>2019-03-14T02:38:16.972Z</published>
+    <updated>2019-03-14T04:54:58.017Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h2&gt;&lt;span id=&quot;lsa类型&quot;&gt;LSA类型&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;LSA类型定义了不同的路由器类型，因此需要多种LSA, 通常考试考Type1 , Type2, Type3,Type4,Type5,
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title></title>
@@ -29,7 +52,7 @@
       
         
         
-          &lt;h1 id=&quot;Pythoner-必会的linux命令&quot;&gt;&lt;a href=&quot;#Pythoner-必会的linux命令&quot; class=&quot;headerlink&quot; title=&quot;Pythoner 必会的linux命令&quot;&gt;&lt;/a&gt;Pythoner
+          &lt;h1&gt;&lt;span id=&quot;pythoner-必会的linux命令&quot;&gt;Pythoner
         
       
     
