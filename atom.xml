@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wjm2432722.github.io/"/>
-  <updated>2019-03-14T07:15:39.068Z</updated>
+  <updated>2019-03-15T03:10:39.657Z</updated>
   <id>https://wjm2432722.github.io/</id>
   
   <author>
@@ -15,6 +15,88 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>linux安装（自用）</title>
+    <link href="https://wjm2432722.github.io/2019/03/15/linux-an-zhuang-zi-yong/"/>
+    <id>https://wjm2432722.github.io/2019/03/15/linux-an-zhuang-zi-yong/</id>
+    <published>2019-03-15T03:07:19.813Z</published>
+    <updated>2019-03-15T03:10:39.657Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+      <category term="系统" scheme="https://wjm2432722.github.io/categories/%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+      <category term="linux" scheme="https://wjm2432722.github.io/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Passive-interface（被动接口）及单播更新(转载红茶三杯的博客)</title>
+    <link href="https://wjm2432722.github.io/2019/03/15/passive-interface-bei-dong-jie-kou-ji-dan-bo-geng-xin-zhuan-zai-hong-cha-san-bei-de-bo-ke/"/>
+    <id>https://wjm2432722.github.io/2019/03/15/passive-interface-bei-dong-jie-kou-ji-dan-bo-geng-xin-zhuan-zai-hong-cha-san-bei-de-bo-ke/</id>
+    <published>2019-03-15T02:47:40.233Z</published>
+    <updated>2019-03-15T02:57:58.361Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1&gt;&lt;span id=&quot;一-被动接口&quot;&gt;一、被动接口&lt;/span&gt;&lt;/h1&gt;&lt;h2&gt;&lt;span id=&quot;1特性概述&quot;&gt;1.特性概述&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+      <category term="网络" scheme="https://wjm2432722.github.io/categories/%E7%BD%91%E7%BB%9C/"/>
+    
+    
+      <category term="路由交换" scheme="https://wjm2432722.github.io/tags/%E8%B7%AF%E7%94%B1%E4%BA%A4%E6%8D%A2/"/>
+    
+      <category term="ospf" scheme="https://wjm2432722.github.io/tags/ospf/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>OSPF末节区域</title>
+    <link href="https://wjm2432722.github.io/2019/03/15/ospf-mo-jie-qu-yu/"/>
+    <id>https://wjm2432722.github.io/2019/03/15/ospf-mo-jie-qu-yu/</id>
+    <published>2019-03-15T02:47:08.417Z</published>
+    <updated>2019-03-15T02:47:08.524Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1&gt;&lt;span id=&quot;ospf末节区域&quot;&gt;OSPF末节区域&lt;/span&gt;&lt;/h1&gt;&lt;h2&gt;&lt;span id=&quot;末节区域&quot;&gt;&lt;strong&gt;末节区域&lt;/strong&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;末节区域&lt;/strong&gt;即是stub
+        
+      
+    
+    </summary>
+    
+      <category term="网络" scheme="https://wjm2432722.github.io/categories/%E7%BD%91%E7%BB%9C/"/>
+    
+    
+      <category term="路由交换" scheme="https://wjm2432722.github.io/tags/%E8%B7%AF%E7%94%B1%E4%BA%A4%E6%8D%A2/"/>
+    
+      <category term="ospf" scheme="https://wjm2432722.github.io/tags/ospf/"/>
+    
+  </entry>
   
   <entry>
     <title>LSA类型</title>

@@ -4,9 +4,9 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="LSA类型, 毛毛的Blog">
-    <meta name="description" content="LSA类型LSA类型定义了不同的路由器类型，因此需要多种LSA, 通常考试考Type1 , Type2, Type3,Type4,Type5, Type7。
-Type1Type1 是Router LSA , 所有的OSPF speaker都">
+    <meta name="keywords" content="Passive-interface（被动接口）及单播更新(转载红茶三杯的博客), 毛毛的Blog">
+    <meta name="description" content="一、被动接口1.特性概述
+在上图所示的拓扑中，R1、R2运行OSPF，R2在其FE0/0及FE1/0接口上都激活了OSPF。FE1/0接口一旦激活OSPF，便开始周期性地发送Hello报文试图在该链路上发现邻居，但是在该链路上并没有邻居（只">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +14,7 @@ Type1Type1 是Router LSA , 所有的OSPF speaker都">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>LSA类型 | 毛毛的Blog</title>
+    <title>Passive-interface（被动接口）及单播更新(转载红茶三杯的博客) | 毛毛的Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -258,13 +258,13 @@ Type1Type1 是Router LSA , 所有的OSPF speaker都">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        LSA类型
+                        Passive-interface（被动接口）及单播更新(转载红茶三杯的博客)
                     </div>
                 </div>
             </div>
@@ -403,7 +403,7 @@ Type1Type1 是Router LSA , 所有的OSPF speaker都">
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-03-14
+                    2019-03-15
                 </div>
 
                 
@@ -419,13 +419,47 @@ Type1Type1 是Router LSA , 所有的OSPF speaker都">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1><span id="lsa类型">LSA类型</span></h1><p>LSA类型定义了不同的路由器类型，因此需要多种LSA, 通常考试考Type1 , Type2, Type3,Type4,Type5, Type7。</p>
-<h2><span id="type1"><strong>Type1</strong></span></h2><p>Type1 是Router LSA , 所有的OSPF speaker都会产生该类LSA，只在区域内传播，包括路由器自身的拓扑信息，和路由信息。</p>
-<h2><span id="type2"><strong>Type2</strong></span></h2><p>Type2是Network LSA,只在MA网络中出现的2类LSA由DR产生，包括DR相连的所有网络的信息，只在区域内传播。</p>
-<h2><span id="type3"><strong>Type3</strong></span></h2><p>Type3是Network summary LSA，由ABR产生，告知区域内路由器区域外的路由条目， 当有多个ABR时使用cost来确定，这个cost是由区域内路由器将外部路由cost和内部cost简单相加所得(metric-Type 1)， 而不是运行SPF算法，因此 可以说在区域内OSPF是一种链路状态协议，而在区域间是一种距离矢量协议。区域间路由的传递</p>
-<h2><span id="type4"><strong>Type4</strong></span></h2><p>Type4是ASBR summary， 由ABR产生，用来广播ASBR的位置， 用show ip ospf database 可以看到Type4 LSA总是一个host mask 255.255.255.255，并且Type4是数据库中唯一没有Area 属性的LSA。</p>
-<h2><span id="type5"><strong>Type5</strong></span></h2><p>Type5是external summary，由ASBR产生，是非OSPF设备的路由信息， 通常在一个大型网络中，路由器的数据库中会存在大量的此类LSA, 给路由器形成较重的负荷。因此我们可以用stub区域来限制此类LSA的传播。但是考虑以下情景，如果一台运行OSPF的路由器需要连接一个非OSPF网络net1，并将非OSPF网络中的路由条目通告到OSPF中，而又不想在数据库中保存大量的由其他路由器通告的外部网络路由，那么这时我们不可以用STUB，因为这将阻止所有的External路由，OSPF网络将丢失net1的路由信息，</p>
-<h2><span id="type-7"><strong>Type 7</strong></span></h2><p>Type7因此被写入了OSPF标准。 为了解决这个问题， CISCO规定了NSSA， Type7在NSSA中传播External Route,在NSSA 的ABR上，Type7 被转换成Type5 （当然必须Type7 LSA P-bit=1），然后由ABR将这些路由条目通告到Backbone。</p>
+                <h1><span id="一-被动接口">一、被动接口</span></h1><h2><span id="1特性概述">1.特性概述</span></h2><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1552618207612.png" alt="1552618207612"></p>
+<p>在上图所示的拓扑中，R1、R2运行OSPF，R2在其FE0/0及FE1/0接口上都激活了OSPF。FE1/0接口一旦激活OSPF，便开始周期性地发送Hello报文试图在该链路上发现邻居，但是在该链路上并没有邻居（只有终端用户），因此这些Hello报文只是增加PC的额外负担而已。<br>针对上面的问题，我们可以将路由器上的FE1/0口设置为passive-interface，如此一来，这个接口将不再收发Hello报文。既然不收发Hello报文，自然就不会在这个接口上形成邻接关系，但是FE1/0接口依然会被R2的Type-1 LSA描述，因此R1依然可以通过OSPF学习到192.168.1.254/24网段的路由。</p>
+<h2><span id="2相关要点">2.相关要点</span></h2><p>RIP、EIGRP、OSPF、ISIS协议均支持passive-interface（也被称为被动接口）特性，但是该特性在每个协议上不尽相同，区别如下:</p>
+<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1552618422336.png" alt="1552618422336"></p>
+<p>当然，我们在路由协议中将某个接口设置为passive-interface的前提是使用network关键字宣告了这个接口的网段，否则passive-interface就没有意义了。passive-interface特性通常被用于某个接口的网段路由需要被其他路由器学习到，但是这个接口本身可能连接着一个末梢网络（只有主机，没有其他的路由器）的场景。 </p>
+<h2><span id="3配置实现">3.<strong>配置实现</strong></span></h2><p><strong>将某个接口配置为被动接口：</strong></p>
+<p>Router(config-router)# passive-interface int-type int-num</p>
+<p><strong>将所有接口配置为被动接口，并手动激活特定接口：</strong></p>
+<p>Router(config-router)# passive-interface default</p>
+<p>Router(config-router)# no passive-interface int-type int-num</p>
+<p><strong>典型配置示例：</strong></p>
+<p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1552618542012.png" alt="1552618542012"></p>
+<p>这是一个非常典型的场景，GS_SW是汇聚层交换机，与核心交换机之间跑个OSPF。GS_SW需要通告设备上VLAN所对应的网段，以便核心交换机能够获知相关的路由。然后一旦GS_SW在OSPF进程中宣告这些VLAN对应的网段，相应的SVI接口就会向VLAN中去泛洪OSPF Hello报文，而这些报文，实际上是多余的，因为下面都是主机或终端。因此我们可以做如下配置：</p>
+<p>interface vlan 10</p>
+<p>  ip address 192.168.10.254 255.255.255.0</p>
+<p>interface vlan 20</p>
+<p>  ip address 192.168.20.254 255.255.255.0</p>
+<p>router ospf 1</p>
+<p>  network 192.168.10.0 0.0.0.255 area 1</p>
+<p>  network 192.168.20.0 0.0.0.255 area 1</p>
+<p>  network 192.168.254.0 0.0.0.255 area 0</p>
+<p>  passive-interface defualt</p>
+<p>  no passive-interface fastethernet 0/24</p>
+<p>由于实际部署的时候，GS_SW上的VLAN可能比较多，SVI口也就非常多，如果一个个的去配置 passive-interface的话工作量可就大了，因此可以选择先使用passive-interface defaut命令将所有接口全部passive掉，然后再使用no passive-interface配置需要激活的接口，例如FE0/24口，这是用于和CO_SW对接OSPF的，因此需要no passive-interface该接口。</p>
+<h1><span id="二-单播更新">二、单播更新</span></h1><h2><span id="1-配置rip单播更新"><strong>1. 配置RIP单播更新：</strong></span></h2><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\1552618579534.png" alt="1552618579534"></p>
+<p>上图所示的环境中，R1、R2和PC同处一个广播域中，可能是连接在同一台二层交换机上，当R1及R2的接口激活RIP时，他们就会开始泛洪RIP报文，由于RIPv2是基于组播发送协议报文的，这就意味着PC也会源源不断地收到R1及R2周期性发送的RIP报文，而这实际上是白白增加PC的负担，因为它压根就不需要这些报文。这里就可以使用到单播更新这个特性。</p>
+<p>R1的关键性配置如下：</p>
+<p>R1(config) router rip</p>
+<p>R1(config-router)# network 192.168.123.0</p>
+<p>R1(config-router)# passive-interface fastethernet 0/0</p>
+<p>R1(config-router)# neighbor 192.168.123.2</p>
+<p>上面的配置中，先使用network关键字宣告相应的网段，然后将R1的FE0/0设置为passive-interface，则该接口将只接收且不再发送RIP报文，此时再搭配neighbor 192.168.123.2命令将使得R1使用单播、目的地址为192.168.123.2的RIP报文来发送路由更新。</p>
+<p>R2的关键性配置如下：</p>
+<p>R2(config) router rip</p>
+<p>R2(config-router)# network 192.168.123.0</p>
+<p>R2(config-router)# passive-interface fastethernet 0/0</p>
+<p>R2(config-router)# neighbor 192.168.123.1</p>
+<p>配置完成后，R1、R2之间交互RIP报文，就采用单播的方式进行，这样PC就不会受到影响。</p>
+<h2><span id="2-配置-eigrp单播更新"><strong>2. 配置 EIGRP单播更新</strong></span></h2><p>注意：如果要求EIGRP实现单播更新，那么接口不能被配置为passive-interface（这与RIP不一样），而是直接使用neighbor命令去指定邻居即可。因为EIGRP接口一旦被设置为passive-interface，则即使手工指定了neighbor，也是无法正常建立EIGRP邻居关系的。</p>
+<p>因此实现EIGRP单播更新，只需先使用network关键字将接口激活EIGRP，然后再搭配neighbor关键字指定特定邻居即可。</p>
+<h2><span id="3-配置-ospf单播更新"><strong>3. 配置 OSPF单播更新</strong></span></h2><p>OSPF的neighbor命令使用上又与EIGRP不太一样。OSPF的neighbor命令只在NBMA及P2MP环境中使用。</p>
 
             </div>
             <hr>
@@ -573,7 +607,7 @@ Type1Type1 是Router LSA , 所有的OSPF speaker都">
                     </span>
                     <a href="https://wjm2432722.github.io" class="b-link-green">毛毛的Blog</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/03/14/lsa-lei-xing/" class="b-link-green">LSA类型</a>
+                    <a href="/2019/03/15/passive-interface-bei-dong-jie-kou-ji-dan-bo-geng-xin-zhuan-zai-hong-cha-san-bei-de-bo-ke/" class="b-link-green">Passive-interface（被动接口）及单播更新(转载红茶三杯的博客)</a>
                 </p>
             </div>
         </div>
@@ -598,6 +632,53 @@ Type1Type1 是Router LSA , 所有的OSPF speaker都">
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
+                <a href="/2019/03/15/linux-an-zhuang-zi-yong/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="linux安装（自用）">
+                        
+                        <span class="card-title">linux安装（自用）</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary">linux起码分2个分区：第一个分区为swap，可以理解为windows的虚拟内存，swap就是linux的虚拟内存，正常为物理内存的2倍
+第二个分区为/（根目录）可以把剩下空间都分给根目录
+linux跟windows一样，最多可以分4个主</div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-03-15
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/系统/" class="post-category" target="_blank">
+                                    系统
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/linux/" target="_blank">
+                        <span class="chip bg-color">linux</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
                 <a href="/2019/03/15/ospf-mo-jie-qu-yu/">
                     <div class="card-image">
                         
@@ -611,9 +692,9 @@ Type1Type1 是Router LSA , 所有的OSPF speaker都">
                     <div class="summary">OSPF末节区域末节区域末节区域即是stub area：其它区域产生的lsa，只有第三类lsa，也就是summary-lsa能进来，其它的4类，5类都会被ABR过滤掉。该区域内的路由器也不能引入外部路由。
 完全末节完全末节即是total s</div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-03-15
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-03-15
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -637,46 +718,6 @@ Type1Type1 是Router LSA , 所有的OSPF speaker都">
                         <span class="chip bg-color">ospf</span>
                     </a>
                     
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2019/03/13/pythoner-bi-hui-de-linux-ming-ling/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt>
-                        
-                        <span class="card-title"></span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary">Pythoner 必会的linux命令
-起因
-
-在日常工作中，学习linux是很痛苦的过程，此文主要列出日常开发所用常用命令行总结，并非linux命令完全指南性学习
-
-入门必看
-
-Linux是什么Linux 是一个开源系统内核，1991年由</div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-03-13
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-user fa-fw"></i>
-                            毛毛12138
-                            
-                        </span>
-                    </div>
                 </div>
                 
             </div>

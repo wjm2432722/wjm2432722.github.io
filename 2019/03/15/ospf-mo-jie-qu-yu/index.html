@@ -4,9 +4,9 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="LSA类型, 毛毛的Blog">
-    <meta name="description" content="LSA类型LSA类型定义了不同的路由器类型，因此需要多种LSA, 通常考试考Type1 , Type2, Type3,Type4,Type5, Type7。
-Type1Type1 是Router LSA , 所有的OSPF speaker都">
+    <meta name="keywords" content="OSPF末节区域, 毛毛的Blog">
+    <meta name="description" content="OSPF末节区域末节区域末节区域即是stub area：其它区域产生的lsa，只有第三类lsa，也就是summary-lsa能进来，其它的4类，5类都会被ABR过滤掉。该区域内的路由器也不能引入外部路由。
+完全末节完全末节即是total s">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +14,7 @@ Type1Type1 是Router LSA , 所有的OSPF speaker都">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>LSA类型 | 毛毛的Blog</title>
+    <title>OSPF末节区域 | 毛毛的Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -258,13 +258,13 @@ Type1Type1 是Router LSA , 所有的OSPF speaker都">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        LSA类型
+                        OSPF末节区域
                     </div>
                 </div>
             </div>
@@ -403,7 +403,7 @@ Type1Type1 是Router LSA , 所有的OSPF speaker都">
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-03-14
+                    2019-03-15
                 </div>
 
                 
@@ -419,13 +419,14 @@ Type1Type1 是Router LSA , 所有的OSPF speaker都">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1><span id="lsa类型">LSA类型</span></h1><p>LSA类型定义了不同的路由器类型，因此需要多种LSA, 通常考试考Type1 , Type2, Type3,Type4,Type5, Type7。</p>
-<h2><span id="type1"><strong>Type1</strong></span></h2><p>Type1 是Router LSA , 所有的OSPF speaker都会产生该类LSA，只在区域内传播，包括路由器自身的拓扑信息，和路由信息。</p>
-<h2><span id="type2"><strong>Type2</strong></span></h2><p>Type2是Network LSA,只在MA网络中出现的2类LSA由DR产生，包括DR相连的所有网络的信息，只在区域内传播。</p>
-<h2><span id="type3"><strong>Type3</strong></span></h2><p>Type3是Network summary LSA，由ABR产生，告知区域内路由器区域外的路由条目， 当有多个ABR时使用cost来确定，这个cost是由区域内路由器将外部路由cost和内部cost简单相加所得(metric-Type 1)， 而不是运行SPF算法，因此 可以说在区域内OSPF是一种链路状态协议，而在区域间是一种距离矢量协议。区域间路由的传递</p>
-<h2><span id="type4"><strong>Type4</strong></span></h2><p>Type4是ASBR summary， 由ABR产生，用来广播ASBR的位置， 用show ip ospf database 可以看到Type4 LSA总是一个host mask 255.255.255.255，并且Type4是数据库中唯一没有Area 属性的LSA。</p>
-<h2><span id="type5"><strong>Type5</strong></span></h2><p>Type5是external summary，由ASBR产生，是非OSPF设备的路由信息， 通常在一个大型网络中，路由器的数据库中会存在大量的此类LSA, 给路由器形成较重的负荷。因此我们可以用stub区域来限制此类LSA的传播。但是考虑以下情景，如果一台运行OSPF的路由器需要连接一个非OSPF网络net1，并将非OSPF网络中的路由条目通告到OSPF中，而又不想在数据库中保存大量的由其他路由器通告的外部网络路由，那么这时我们不可以用STUB，因为这将阻止所有的External路由，OSPF网络将丢失net1的路由信息，</p>
-<h2><span id="type-7"><strong>Type 7</strong></span></h2><p>Type7因此被写入了OSPF标准。 为了解决这个问题， CISCO规定了NSSA， Type7在NSSA中传播External Route,在NSSA 的ABR上，Type7 被转换成Type5 （当然必须Type7 LSA P-bit=1），然后由ABR将这些路由条目通告到Backbone。</p>
+                <h1><span id="ospf末节区域">OSPF末节区域</span></h1><h2><span id="末节区域"><strong>末节区域</strong></span></h2><p><strong>末节区域</strong>即是stub area：其它区域产生的lsa，只有第三类lsa，也就是summary-lsa能进来，其它的4类，5类都会被ABR过滤掉。该区域内的路由器也不能引入外部路由。</p>
+<h2><span id="完全末节"><strong>完全末节</strong></span></h2><p><strong>完全末节</strong>即是total stub：其它区域的lsa都进不来，包括第三类的，该区域的ABR会产生一个缺省的3类lsa，区域内其它路由器通过这条lsa，计算出默认路由。</p>
+<h2><span id="次末节区域"><strong>次末节区域</strong></span></h2><p><strong>次末节区域</strong>：not-so-stubby ，也就是nssa区域，它与stub的区别是，这个区域可以引入外部路由。3类lsa可以进来，但4类和5类lsa仍然被过滤，引入的外部路由会以7类lsa的形式存在，ABR也会产生一个缺省的7类lsa，其它路由器通过这条lsa计算出默认路由。</p>
+<h2><span id="完全次末节区域"><strong>完全次末节区域</strong></span></h2><p><strong>完全次末节区域</strong>：total nssa，与total stub类似，这个区域也是连3类lsa都过滤掉，即其它区域产生的lsa将无法进入该区域。但是ABR会产生一个缺省的3类lsa，其它路由器通过这条lsa计算出默认路由。</p>
+<h2><span id="简单的说就是">简单的说，就是</span></h2><p><strong>stub</strong>过滤4,5类lsa，ABR会产生缺省的3类lsa，区域内不能引入外部路由</p>
+<p><strong>total</strong> stub过滤3，4，5类lsa，ABR会产生缺省的3类lsa，区域内不能引入外部路由</p>
+<p><strong>nssa</strong>过滤4，5类lsa，ABR会产生缺省的7类lsa，该区域能引入外部路由</p>
+<p><strong>total nssa</strong>过滤3，4，5类lsa，ABR会产生缺省的3类lsa，该区域能引入外部路由</p>
 
             </div>
             <hr>
@@ -573,7 +574,7 @@ Type1Type1 是Router LSA , 所有的OSPF speaker都">
                     </span>
                     <a href="https://wjm2432722.github.io" class="b-link-green">毛毛的Blog</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/03/14/lsa-lei-xing/" class="b-link-green">LSA类型</a>
+                    <a href="/2019/03/15/ospf-mo-jie-qu-yu/" class="b-link-green">OSPF末节区域</a>
                 </p>
             </div>
         </div>
@@ -598,18 +599,18 @@ Type1Type1 是Router LSA , 所有的OSPF speaker都">
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/03/15/ospf-mo-jie-qu-yu/">
+                <a href="/2019/03/15/passive-interface-bei-dong-jie-kou-ji-dan-bo-geng-xin-zhuan-zai-hong-cha-san-bei-de-bo-ke/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="OSPF末节区域">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="Passive-interface（被动接口）及单播更新(转载红茶三杯的博客)">
                         
-                        <span class="card-title">OSPF末节区域</span>
+                        <span class="card-title">Passive-interface（被动接口）及单播更新(转载红茶三杯的博客)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">OSPF末节区域末节区域末节区域即是stub area：其它区域产生的lsa，只有第三类lsa，也就是summary-lsa能进来，其它的4类，5类都会被ABR过滤掉。该区域内的路由器也不能引入外部路由。
-完全末节完全末节即是total s</div>
+                    <div class="summary">一、被动接口1.特性概述
+在上图所示的拓扑中，R1、R2运行OSPF，R2在其FE0/0及FE1/0接口上都激活了OSPF。FE1/0接口一旦激活OSPF，便开始周期性地发送Hello报文试图在该链路上发现邻居，但是在该链路上并没有邻居（只</div>
                     <div class="publish-info">
                         <span class="publish-date">
                             <i class="fa fa-clock-o fa-fw icon-date"></i>2019-03-15
@@ -648,35 +649,45 @@ Type1Type1 是Router LSA , 所有的OSPF speaker都">
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/03/13/pythoner-bi-hui-de-linux-ming-ling/">
+                <a href="/2019/03/14/lsa-lei-xing/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt>
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="LSA类型">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">LSA类型</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">Pythoner 必会的linux命令
-起因
-
-在日常工作中，学习linux是很痛苦的过程，此文主要列出日常开发所用常用命令行总结，并非linux命令完全指南性学习
-
-入门必看
-
-Linux是什么Linux 是一个开源系统内核，1991年由</div>
+                    <div class="summary">LSA类型LSA类型定义了不同的路由器类型，因此需要多种LSA, 通常考试考Type1 , Type2, Type3,Type4,Type5, Type7。
+Type1Type1 是Router LSA , 所有的OSPF speaker都</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-03-13
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-03-14
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fa fa-user fa-fw"></i>
-                            毛毛12138
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/网络/" class="post-category" target="_blank">
+                                    网络
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/路由交换/" target="_blank">
+                        <span class="chip bg-color">路由交换</span>
+                    </a>
+                    
+                    <a href="/tags/ospf/" target="_blank">
+                        <span class="chip bg-color">ospf</span>
+                    </a>
+                    
                 </div>
                 
             </div>
