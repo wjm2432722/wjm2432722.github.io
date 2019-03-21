@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>华为交换机配置SSH服务</title>
+      <link href="/2019/03/20/hua-wei-jiao-huan-ji-pei-zhi-ssh-fu-wu/"/>
+      <url>/2019/03/20/hua-wei-jiao-huan-ji-pei-zhi-ssh-fu-wu/</url>
+      
+        <content type="html"><![CDATA[<h1><span id="华为交换机配置ssh服务">华为交换机配置SSH服务</span></h1><p>ssh authentication-type default password<br>ssh user admin<br>ssh user admin authentication-type password<br>ssh user admin service-type all</p><p>stelnet service enable</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网络 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 路由交换 </tag>
+            
+            <tag> 交换 </tag>
+            
+            <tag> ssh配置 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>linux安装（自用）</title>
       <link href="/2019/03/15/linux-an-zhuang-zi-yong/"/>
       <url>/2019/03/15/linux-an-zhuang-zi-yong/</url>
@@ -47,6 +76,8 @@
             
             <tag> 路由交换 </tag>
             
+            <tag> 路由 </tag>
+            
             <tag> ospf </tag>
             
         </tags>
@@ -74,6 +105,8 @@
             
             <tag> 路由交换 </tag>
             
+            <tag> 路由 </tag>
+            
             <tag> ospf </tag>
             
         </tags>
@@ -100,6 +133,8 @@
         <tags>
             
             <tag> 路由交换 </tag>
+            
+            <tag> 路由 </tag>
             
             <tag> ospf </tag>
             

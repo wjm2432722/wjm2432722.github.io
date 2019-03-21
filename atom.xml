@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wjm2432722.github.io/"/>
-  <updated>2019-03-15T03:10:39.657Z</updated>
+  <updated>2019-03-21T01:15:42.294Z</updated>
   <id>https://wjm2432722.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>华为交换机配置SSH服务</title>
+    <link href="https://wjm2432722.github.io/2019/03/20/hua-wei-jiao-huan-ji-pei-zhi-ssh-fu-wu/"/>
+    <id>https://wjm2432722.github.io/2019/03/20/hua-wei-jiao-huan-ji-pei-zhi-ssh-fu-wu/</id>
+    <published>2019-03-20T07:27:27.910Z</published>
+    <updated>2019-03-21T01:15:42.294Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1&gt;&lt;span id=&quot;华为交换机配置ssh服务&quot;&gt;华为交换机配置SSH服务&lt;/span&gt;&lt;/h1&gt;&lt;p&gt;ssh authentication-type default password&lt;br&gt;ssh user admin&lt;br&gt;ssh user admin
+        
+      
+    
+    </summary>
+    
+      <category term="网络" scheme="https://wjm2432722.github.io/categories/%E7%BD%91%E7%BB%9C/"/>
+    
+    
+      <category term="路由交换" scheme="https://wjm2432722.github.io/tags/%E8%B7%AF%E7%94%B1%E4%BA%A4%E6%8D%A2/"/>
+    
+      <category term="交换" scheme="https://wjm2432722.github.io/tags/%E4%BA%A4%E6%8D%A2/"/>
+    
+      <category term="ssh配置" scheme="https://wjm2432722.github.io/tags/ssh%E9%85%8D%E7%BD%AE/"/>
+    
+  </entry>
   
   <entry>
     <title>linux安装（自用）</title>
@@ -47,7 +77,7 @@
     <link href="https://wjm2432722.github.io/2019/03/15/passive-interface-bei-dong-jie-kou-ji-dan-bo-geng-xin-zhuan-zai-hong-cha-san-bei-de-bo-ke/"/>
     <id>https://wjm2432722.github.io/2019/03/15/passive-interface-bei-dong-jie-kou-ji-dan-bo-geng-xin-zhuan-zai-hong-cha-san-bei-de-bo-ke/</id>
     <published>2019-03-15T02:47:40.233Z</published>
-    <updated>2019-03-15T02:57:58.361Z</updated>
+    <updated>2019-03-21T01:15:53.382Z</updated>
     
     <summary type="html">
     
@@ -66,6 +96,8 @@
     
       <category term="路由交换" scheme="https://wjm2432722.github.io/tags/%E8%B7%AF%E7%94%B1%E4%BA%A4%E6%8D%A2/"/>
     
+      <category term="路由" scheme="https://wjm2432722.github.io/tags/%E8%B7%AF%E7%94%B1/"/>
+    
       <category term="ospf" scheme="https://wjm2432722.github.io/tags/ospf/"/>
     
   </entry>
@@ -75,7 +107,7 @@
     <link href="https://wjm2432722.github.io/2019/03/15/ospf-mo-jie-qu-yu/"/>
     <id>https://wjm2432722.github.io/2019/03/15/ospf-mo-jie-qu-yu/</id>
     <published>2019-03-15T02:47:08.417Z</published>
-    <updated>2019-03-15T02:47:08.524Z</updated>
+    <updated>2019-03-21T01:16:05.109Z</updated>
     
     <summary type="html">
     
@@ -94,6 +126,8 @@
     
       <category term="路由交换" scheme="https://wjm2432722.github.io/tags/%E8%B7%AF%E7%94%B1%E4%BA%A4%E6%8D%A2/"/>
     
+      <category term="路由" scheme="https://wjm2432722.github.io/tags/%E8%B7%AF%E7%94%B1/"/>
+    
       <category term="ospf" scheme="https://wjm2432722.github.io/tags/ospf/"/>
     
   </entry>
@@ -103,7 +137,7 @@
     <link href="https://wjm2432722.github.io/2019/03/14/lsa-lei-xing/"/>
     <id>https://wjm2432722.github.io/2019/03/14/lsa-lei-xing/</id>
     <published>2019-03-14T02:38:16.972Z</published>
-    <updated>2019-03-14T07:15:39.068Z</updated>
+    <updated>2019-03-21T01:16:16.498Z</updated>
     
     <summary type="html">
     
@@ -122,6 +156,8 @@
     
     
       <category term="路由交换" scheme="https://wjm2432722.github.io/tags/%E8%B7%AF%E7%94%B1%E4%BA%A4%E6%8D%A2/"/>
+    
+      <category term="路由" scheme="https://wjm2432722.github.io/tags/%E8%B7%AF%E7%94%B1/"/>
     
       <category term="ospf" scheme="https://wjm2432722.github.io/tags/ospf/"/>
     

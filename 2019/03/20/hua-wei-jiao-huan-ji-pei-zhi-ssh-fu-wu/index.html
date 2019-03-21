@@ -4,9 +4,8 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="LSA类型, 毛毛的Blog">
-    <meta name="description" content="LSA类型LSA类型定义了不同的路由器类型，因此需要多种LSA, 通常考试考Type1 , Type2, Type3,Type4,Type5, Type7。
-Type1Type1 是Router LSA , 所有的OSPF speaker都">
+    <meta name="keywords" content="华为交换机配置SSH服务, 毛毛的Blog">
+    <meta name="description" content="华为交换机配置SSH服务ssh authentication-type default passwordssh user adminssh user admin authentication-type passwordssh user ad">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +13,7 @@ Type1Type1 是Router LSA , 所有的OSPF speaker都">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>LSA类型 | 毛毛的Blog</title>
+    <title>华为交换机配置SSH服务 | 毛毛的Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -258,13 +257,13 @@ Type1Type1 是Router LSA , 所有的OSPF speaker都">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        LSA类型
+                        华为交换机配置SSH服务
                     </div>
                 </div>
             </div>
@@ -379,12 +378,12 @@ Type1Type1 是Router LSA , 所有的OSPF speaker都">
                                 <span class="chip bg-color">路由交换</span>
                             </a>
                         
-                            <a href="/tags/路由/" target="_blank">
-                                <span class="chip bg-color">路由</span>
+                            <a href="/tags/交换/" target="_blank">
+                                <span class="chip bg-color">交换</span>
                             </a>
                         
-                            <a href="/tags/ospf/" target="_blank">
-                                <span class="chip bg-color">ospf</span>
+                            <a href="/tags/ssh配置/" target="_blank">
+                                <span class="chip bg-color">ssh配置</span>
                             </a>
                         
                     </div>
@@ -407,7 +406,7 @@ Type1Type1 是Router LSA , 所有的OSPF speaker都">
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-03-14
+                    2019-03-20
                 </div>
 
                 
@@ -423,13 +422,8 @@ Type1Type1 是Router LSA , 所有的OSPF speaker都">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1><span id="lsa类型">LSA类型</span></h1><p>LSA类型定义了不同的路由器类型，因此需要多种LSA, 通常考试考Type1 , Type2, Type3,Type4,Type5, Type7。</p>
-<h2><span id="type1"><strong>Type1</strong></span></h2><p>Type1 是Router LSA , 所有的OSPF speaker都会产生该类LSA，只在区域内传播，包括路由器自身的拓扑信息，和路由信息。</p>
-<h2><span id="type2"><strong>Type2</strong></span></h2><p>Type2是Network LSA,只在MA网络中出现的2类LSA由DR产生，包括DR相连的所有网络的信息，只在区域内传播。</p>
-<h2><span id="type3"><strong>Type3</strong></span></h2><p>Type3是Network summary LSA，由ABR产生，告知区域内路由器区域外的路由条目， 当有多个ABR时使用cost来确定，这个cost是由区域内路由器将外部路由cost和内部cost简单相加所得(metric-Type 1)， 而不是运行SPF算法，因此 可以说在区域内OSPF是一种链路状态协议，而在区域间是一种距离矢量协议。区域间路由的传递</p>
-<h2><span id="type4"><strong>Type4</strong></span></h2><p>Type4是ASBR summary， 由ABR产生，用来广播ASBR的位置， 用show ip ospf database 可以看到Type4 LSA总是一个host mask 255.255.255.255，并且Type4是数据库中唯一没有Area 属性的LSA。</p>
-<h2><span id="type5"><strong>Type5</strong></span></h2><p>Type5是external summary，由ASBR产生，是非OSPF设备的路由信息， 通常在一个大型网络中，路由器的数据库中会存在大量的此类LSA, 给路由器形成较重的负荷。因此我们可以用stub区域来限制此类LSA的传播。但是考虑以下情景，如果一台运行OSPF的路由器需要连接一个非OSPF网络net1，并将非OSPF网络中的路由条目通告到OSPF中，而又不想在数据库中保存大量的由其他路由器通告的外部网络路由，那么这时我们不可以用STUB，因为这将阻止所有的External路由，OSPF网络将丢失net1的路由信息，</p>
-<h2><span id="type-7"><strong>Type 7</strong></span></h2><p>Type7因此被写入了OSPF标准。 为了解决这个问题， CISCO规定了NSSA， Type7在NSSA中传播External Route,在NSSA 的ABR上，Type7 被转换成Type5 （当然必须Type7 LSA P-bit=1），然后由ABR将这些路由条目通告到Backbone。</p>
+                <h1><span id="华为交换机配置ssh服务">华为交换机配置SSH服务</span></h1><p>ssh authentication-type default password<br>ssh user admin<br>ssh user admin authentication-type password<br>ssh user admin service-type all</p>
+<p>stelnet service enable</p>
 
             </div>
             <hr>
@@ -577,7 +571,7 @@ Type1Type1 是Router LSA , 所有的OSPF speaker都">
                     </span>
                     <a href="https://wjm2432722.github.io" class="b-link-green">毛毛的Blog</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/03/14/lsa-lei-xing/" class="b-link-green">LSA类型</a>
+                    <a href="/2019/03/20/hua-wei-jiao-huan-ji-pei-zhi-ssh-fu-wu/" class="b-link-green">华为交换机配置SSH服务</a>
                 </p>
             </div>
         </div>
@@ -600,24 +594,24 @@ Type1Type1 是Router LSA , 所有的OSPF speaker都">
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2019/03/15/ospf-mo-jie-qu-yu/">
+                <a href="/2019/03/20/hua-wei-jiao-huan-ji-pei-zhi-ssh-fu-wu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="OSPF末节区域">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="华为交换机配置SSH服务">
                         
-                        <span class="card-title">OSPF末节区域</span>
+                        <span class="card-title">华为交换机配置SSH服务</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">OSPF末节区域末节区域末节区域即是stub area：其它区域产生的lsa，只有第三类lsa，也就是summary-lsa能进来，其它的4类，5类都会被ABR过滤掉。该区域内的路由器也不能引入外部路由。
-完全末节完全末节即是total s</div>
+                    <div class="summary">华为交换机配置SSH服务ssh authentication-type default passwordssh user adminssh user admin authentication-type passwordssh user ad</div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-03-15
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-03-20
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -630,6 +624,7 @@ Type1Type1 是Router LSA , 所有的OSPF speaker都">
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -637,12 +632,12 @@ Type1Type1 是Router LSA , 所有的OSPF speaker都">
                         <span class="chip bg-color">路由交换</span>
                     </a>
                     
-                    <a href="/tags/路由/" target="_blank">
-                        <span class="chip bg-color">路由</span>
+                    <a href="/tags/交换/" target="_blank">
+                        <span class="chip bg-color">交换</span>
                     </a>
                     
-                    <a href="/tags/ospf/" target="_blank">
-                        <span class="chip bg-color">ospf</span>
+                    <a href="/tags/ssh配置/" target="_blank">
+                        <span class="chip bg-color">ssh配置</span>
                     </a>
                     
                 </div>
@@ -656,35 +651,42 @@ Type1Type1 是Router LSA , 所有的OSPF speaker都">
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/03/13/pythoner-bi-hui-de-linux-ming-ling/">
+                <a href="/2019/03/15/linux-an-zhuang-zi-yong/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt>
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="linux安装（自用）">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">linux安装（自用）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">Pythoner 必会的linux命令
-起因
-
-在日常工作中，学习linux是很痛苦的过程，此文主要列出日常开发所用常用命令行总结，并非linux命令完全指南性学习
-
-入门必看
-
-Linux是什么Linux 是一个开源系统内核，1991年由</div>
+                    <div class="summary">linux起码分2个分区：第一个分区为swap，可以理解为windows的虚拟内存，swap就是linux的虚拟内存，正常为物理内存的2倍
+第二个分区为/（根目录）可以把剩下空间都分给根目录
+linux跟windows一样，最多可以分4个主</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-03-13
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-03-15
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fa fa-user fa-fw"></i>
-                            毛毛12138
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/系统/" class="post-category" target="_blank">
+                                    系统
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/linux/" target="_blank">
+                        <span class="chip bg-color">linux</span>
+                    </a>
+                    
                 </div>
                 
             </div>
