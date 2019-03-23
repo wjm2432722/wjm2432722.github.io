@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wjm2432722.github.io/"/>
-  <updated>2019-03-21T01:15:42.294Z</updated>
+  <updated>2019-03-22T01:14:22.906Z</updated>
   <id>https://wjm2432722.github.io/</id>
   
   <author>
@@ -15,6 +15,20 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test</title>
+    <link href="https://wjm2432722.github.io/2019/03/22/test/"/>
+    <id>https://wjm2432722.github.io/2019/03/22/test/</id>
+    <published>2019-03-22T01:14:22.000Z</published>
+    <updated>2019-03-22T01:14:22.906Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>华为交换机配置SSH服务</title>
@@ -77,7 +91,7 @@
     <link href="https://wjm2432722.github.io/2019/03/15/passive-interface-bei-dong-jie-kou-ji-dan-bo-geng-xin-zhuan-zai-hong-cha-san-bei-de-bo-ke/"/>
     <id>https://wjm2432722.github.io/2019/03/15/passive-interface-bei-dong-jie-kou-ji-dan-bo-geng-xin-zhuan-zai-hong-cha-san-bei-de-bo-ke/</id>
     <published>2019-03-15T02:47:40.233Z</published>
-    <updated>2019-03-21T01:15:53.382Z</updated>
+    <updated>2019-03-22T01:24:05.503Z</updated>
     
     <summary type="html">
     
@@ -177,6 +191,28 @@
         
         
           &lt;h1&gt;&lt;span id=&quot;pythoner-必会的linux命令&quot;&gt;Pythoner
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://wjm2432722.github.io/2018/07/23/docker-ji-chu-ming-ling-zong-jie/"/>
+    <id>https://wjm2432722.github.io/2018/07/23/docker-ji-chu-ming-ling-zong-jie/</id>
+    <published>2018-07-23T07:27:10.373Z</published>
+    <updated>2018-07-12T01:06:10.259Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3&gt;&lt;span id=&quot;docker-基础命令总结&quot;&gt;docker 基础命令总结&lt;/span&gt;&lt;/h3&gt;&lt;h4&gt;&lt;span id=&quot;一-操作系统要求&quot;&gt;一 操作系统要求&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;服务器系统: 阿里云centos 7  Mac命令行软件 mac SSH
         
       
     
